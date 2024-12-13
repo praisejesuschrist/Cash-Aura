@@ -1,0 +1,1 @@
+while wait() do local function getMoneyAroundMe() for i, money in ipairs(game.Workspace.Ignored.Drop:GetChildren()) do if money.Name == "MoneyDrop" and (money.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= 20 then fireclickdetector(money.ClickDetector) end end end getMoneyAroundMe() end 
